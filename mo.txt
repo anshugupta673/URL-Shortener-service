@@ -1,0 +1,4 @@
+URL Shortening Serivce (Golang-fiber + Redis + Docker)
+Bird eye view of the project:
+1. User interacting with the project, golang server running at PORT:3000, Go-fiber interacts with the db at PORT:6379(def redis PORT)
+
