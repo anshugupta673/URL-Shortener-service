@@ -13,7 +13,7 @@ import (
 /* register all your routes */
 func setupRoutes(app *fiber.App) {
 	app.Get("/:url", routes.ResolveURL)
-	app.Post("/api/v1", routes.ShortenURL)
+	app.Post("/api/v1", routes.ShortenURL) /* when we hit the hit /api/v1 with POST request, we send the URL to be shortened to this func(does all the magic) */
 }
 
 func main() {
