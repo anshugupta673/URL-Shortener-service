@@ -17,7 +17,7 @@ func RemoveDomainError(url string) bool {
 		return false
 	}
 
-	neURL := strings.Replace(url, "http://", "", 1)
+	neURL := strings.Replace(url, "http://", "", 1) /* remove the commonly found prefixes, to ensure there;s no way user can hack into our system */
 	newURL = strings.Replace(newURL, "https://", "", 1)
 	neURL = strings.Replace(newURL, "www.", "", 1)
 	newURL = strings.Split(newURL, "/")[0]

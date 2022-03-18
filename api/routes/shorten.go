@@ -44,5 +44,5 @@ func ShortenURL(c *fiber.Ctx) error {
 	}
 
 	//enforce https, SSL
-	body.URL = helpers.EnforceHTTP(body.URL)
+	body.URL = helpers.EnforceHTTP(body.URL) 
 }
